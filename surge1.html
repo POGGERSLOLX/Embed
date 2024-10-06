@@ -3,49 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surge Embed</title>
+    <title>Discord Embed Example</title>
+    <style>
+        body {
+            background-color: #36393F; /* Discord background color */
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .embed {
+            background-color: #2F3136; /* Embed background color */
+            border: 1px solid #7289DA; /* Border color */
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px; /* Width of the embed */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .embed h1 {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+        }
+        .embed p {
+            margin: 0 0 15px 0;
+        }
+        .embed img {
+            width: 100%; /* Makes the image responsive */
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <script>
-        // Your embed JSON
-        const embedJson = {
-            "embed": {
-                "title": "Surge Services",
-                "description": "The #1 Fortnite Cheat Provider",
-                "color": 5814783,
-                "fields": [
-                    {
-                        "name": "🔴 100% Undetected Cheat Menu",
-                        "value": "Fully configurable and very cheap for its quality!",
-                        "inline": true
-                    },
-                    {
-                        "name": "🟢 HWID Spoofer",
-                        "value": "Cheapest HWID Spoofer & Cleaner for all motherboards!",
-                        "inline": true
-                    },
-                    {
-                        "name": "Check us out!",
-                        "value": "https://surge-services.store",
-                        "inline": false
-                    }
-                ],
-                "footer": {
-                    "text": "Footer text here! 🔗",
-                    "icon_url": "https://cdn.discordapp.com/attachments/1200901377514295346/1292580035512766498/17_e9346e2d-2991-4c98-9b31-6869a1cd7d56.png"
-                },
-                "thumbnail": {
-                    "url": "https://cdn.discordapp.com/attachments/1200901377514295346/1292580035512766498/17_e9346e2d-2991-4c98-9b31-6869a1cd7d56.png"
-                },
-                "image": {
-                    "url": "https://cdn.discordapp.com/attachments/1200901377514295346/1292580035512766498/17_e9346e2d-2991-4c98-9b31-6869a1cd7d56.png"
-                },
-                "timestamp": "2024-10-06T12:00:00Z"
-            }
-        };
-        
-        // Send this JSON to your bot or directly output it to the console
-        console.log(JSON.stringify(embedJson));
-    </script>
+    <div class="embed">
+        <h1>Your Header Here</h1>
+        <p>This is the description of the embed. You can add more text here as needed.</p>
+        <img src="https://example.com/your-large-image.jpg" alt="Your Image"> <!-- Replace with your image URL -->
+    </div>
 </body>
 </html>
